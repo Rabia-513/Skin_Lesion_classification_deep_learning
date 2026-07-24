@@ -1,19 +1,19 @@
-Skin Lesion Classification Using Deep Learning
-
+<img width="1150" height="607" alt="image" src="https://github.com/user-attachments/assets/0dd1515f-a9fd-430d-8369-e81b51d4ced2" />**#Skin Lesion Classification Using Deep Learning
+**
 A deep learning project for classifying dermoscopic skin-lesion images from the HAM10000 dataset into seven diagnostic categories.
 
 The project compares custom convolutional neural networks with MobileNetV2 transfer learning and fine-tuning. It also includes a Gradio web interface that allows users to upload a skin-lesion image and view the predicted class probabilities.
 
-Project Overview
+**Project Overview**
 
 Skin-lesion classification is challenging because several skin conditions have similar visual characteristics. The HAM10000 dataset is also highly imbalanced, with melanocytic nevi representing most of the available images.
 
 This project builds and evaluates four deep learning models:
 
-Simple CNN baseline
+**Simple CNN baseline
 Improved CNN with class weighting
 MobileNetV2 transfer learning
-Fine-tuned MobileNetV2
+Fine-tuned MobileNetV2**
 
 The models are compared using:
 
@@ -29,7 +29,7 @@ Confusion matrices
 
 Because of class imbalance, macro F1-score was used as the main metric for selecting the best model.
 
-Dataset
+**Dataset**
 
 The project uses the HAM10000: Human Against Machine with 10,000 Training Images dataset.
 
@@ -39,7 +39,8 @@ The notebook processes:
 7 skin-lesion classes
 Metadata from HAM10000_metadata.csv
 Images from two separate image folders
-Dataset Split
+
+**Dataset Split**
 
 A stratified split was used to preserve the class distribution across all subsets.
 
@@ -50,7 +51,7 @@ Testing	10%	1,002
 
 The random state was set to 42 for reproducibility.
 
-Model 1: Simple CNN Baseline
+**Model 1: Simple CNN Baseline**
 
 The baseline model contains:
 
@@ -61,7 +62,7 @@ Dense layer with 128 neurons
 Dropout
 Seven-class softmax output layer
 
-Model 2: Improved CNN
+**Model 2: Improved CNN**
 
 The improved CNN contains:
 
@@ -74,7 +75,7 @@ Dropout regularization
 Class weights
 
 Class weights were calculated using the balanced class-weight method to give more importance to minority classes.
-Model 3: MobileNetV2 Transfer Learning
+**Model 3: MobileNetV2 Transfer Learning**
 
 This model uses MobileNetV2 pretrained on ImageNet as a feature extractor.
 
@@ -86,8 +87,9 @@ Dropout
 Dense layer with 128 neurons
 Dropout
 Seven-class softmax output layer
-Model 3B: Fine-Tuned MobileNetV2
 
+**Model 3B: Fine-Tuned MobileNetV2
+**
 The best MobileNetV2 transfer-learning model is loaded and fine-tuned.
 
 Fine-tuning settings include:
@@ -103,7 +105,7 @@ Early stopping
 Learning-rate reduction
 
 
-Gradio Web Application
+**Gradio Web Application**
 
 The notebook includes an interactive Gradio interface.
 
