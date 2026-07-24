@@ -1,4 +1,11 @@
-<img width="1150" height="607" alt="image" src="https://github.com/user-attachments/assets/0dd1515f-a9fd-430d-8369-e81b51d4ced2" />**#Skin Lesion Classification Using Deep Learning
+<img width="1150" height="607" alt="image" src="https://github.com/user-attachments/assets/0dd1515f-a9fd-430d-8369-e81b51d4ced2" />
+
+
+<img width="1160" height="646" alt="image" src="https://github.com/user-attachments/assets/dc3648ed-e9d3-4cfd-84b5-88ffc5fa85de" />
+
+
+
+**Skin Lesion Classification Using Deep Learning
 **
 A deep learning project for classifying dermoscopic skin-lesion images from the HAM10000 dataset into seven diagnostic categories.
 
